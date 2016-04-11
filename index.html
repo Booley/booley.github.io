@@ -1,2 +1,57 @@
-Hello World
-what in the world is this?
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gaydar</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/loader.js"></script>
+
+  </head>
+  <body>
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-10">
+			<h2>
+				Test yo gaydar
+			</h2>
+			<p class="text-left">
+				Directions: You will be shown men. Press the "G" key on your keyboard if you think this studmuffin is gay, or press the "S" key if you think this gross breeder is straight. You will be shown your score only at the end! When you press Start, you'll be prompted for how many men you'd like to see.
+			</p>
+			<div class="carousel slide" id="carousel-241413" data-interval="false">
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#carousel-241413">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_284x96dp.png">
+					</div>
+				</div> <a class="left carousel-control" href="#carousel-241413" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-241413" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+
+			<button type="button" id="begin">Start!</button>
+
+			<p>Number of images seen so far: <span id="index"></span></p>
+			<p>Final score: <span id="score"></span></p>
+		</div>
+
+		<div class="col-md-1">
+			<p id="predict"></p>
+		</div>
+	</div>
+  </body>
+</html>
