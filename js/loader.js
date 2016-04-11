@@ -3,12 +3,13 @@ var myFirebaseRef = new Firebase("https://sizzling-torch-6800.firebaseio.com/");
 var carousel_index = 0
 var record = []
 var start = false
+var over = false
 var obj
 
 $(document).ready(function() {
 
 $("#begin").click(function() {
-    if(!start) {
+    if(!start && !over) {
         start = true
 
         while(true) {
@@ -61,6 +62,7 @@ function calculateScore(a1, a2) {
 
 function moveCarousel() {
     if((record.length == obj.length) && start) {
+        over = true
         start = false
         score = calculateScore(record, obj.labels)
         $("#score").text(score + " / " + obj.length)
